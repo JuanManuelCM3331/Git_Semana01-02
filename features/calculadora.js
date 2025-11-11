@@ -10,4 +10,11 @@ function multiplicacion(a, b){
   return a * b;
 }
 
-module.exports = { suma, resta, multiplicacion };
+function division(a, b){
+  if(b === 0){
+    return "Error: No se puede dividir entre 0";
+  }
+  return a / b;
+}
+
+module.exports = { suma, resta, multiplicacion, division };
