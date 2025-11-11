@@ -1,9 +1,13 @@
-function sum(a, b){
+function suma(a, b){
   return a + b;
 }
 
-function subtract(a, b){
+function resta(a, b){
   return a - b;
 }
 
-module.exports = { sum, subtract };
+function multiplicacion(a, b){
+  return a * b;
+}
+
+module.exports = { suma, resta, multiplicacion };
