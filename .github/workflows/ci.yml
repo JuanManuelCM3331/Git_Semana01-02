@@ -27,3 +27,19 @@ jobs:
 
       - name: Run Prettier
         run: npx prettier --check .
+
+      - name: Update test file
+        run: |
+          FILE_PATH="ruta/al/archivo/de/prueba.js"
+          if [ -f "$FILE_PATH" ]; then
+            sed -i 's|const suma = require("../suma");|const { suma } = require("../features/calculadora");|' "$FILE_PATH"
+          else
+            echo "El archivo de prueba no existe en la ruta especificada."
+          fi
+
+      - name: Create wrapper suma.js
+        run: |
+          cat > ./suma.js <<'EOF'
+          const { suma } = require('./features/calculadora');
+          module.exports = suma;
+          EOF
