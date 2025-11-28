@@ -6,7 +6,6 @@
   "version": "1.0.0",
   "description": "Repo del proyecto git #\u0000 \u0000G\u0000i\u0000t\u0000_\u0000S\u0000e\u0000m\u0000a\u0000n\u0000a\u00000\u00001\u0000\r\u0000 \u0000",
   "main": "index.js",
-  "test": "jest",
   "directories": {
   },
   "dependencies": {
